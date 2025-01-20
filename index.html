@@ -6,22 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="icon" href="favicon/favicon.ico">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Pete's Shop</h1>
             <h2>Your shop for whole foods, organic, home brewing & more</h2>
             <h3>Community owned and run</h3>
-            <nav>
+            <div class="navbar">
                 <a href="/index.html">Home</a>
-                <a href="/departments.html">Departments</a>
-                <a href="/homebrew.html">Homebrew</a>
-                <a href="/herbs-and-spices.html">Herbs and Spices</a>
-                <a href="/welsh-products.html">Welsh Products</a>
-                <a href="/wholefoods.html">Wholefoods</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Departments
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/homebrew.html">Homebrew</a>
+                        <a href="/herbs-and-spices.html">Herbs and Spices</a>
+                        <a href="/welsh-products.html">Welsh Products</a>
+                        <a href="/wholefoods.html">Wholefoods</a>
+                    </div>
+                </div>
                 <a href="/special-orders.html">Special Orders</a>
                 <a href="/contact.html">Contact</a>
-            </nav>
+            </div>
         </header>
         <main></main>
         <footer></footer>
