@@ -1,7 +1,19 @@
 /* Background Styling */
+
 body {
+  flex-direction: column;
   background-color: #fffdf6;
   color: #3c2323;
+}
+
+footer {
+  text-align: center;
+  background-color: #3c2323;
+  color: #fffdf6;
+}
+
+footer table {
+  margin: 0 auto; /* Centers the table horizontally */
 }
 
 /* Navbar container */
