@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   background-color: #fffdf6;
   color: #3c2323;
+  margin: 0;
 }
 
 footer {
@@ -16,21 +17,80 @@ footer table {
   margin: 0 auto; /* Centers the table horizontally */
 }
 
+.about h2,
+h3,
+p {
+  text-align: center;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo_header {
+  font-size: 2em;
+  padding-top: 5%;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo_subheader {
+  font-size: 1.5em;
+  padding-top: 2.5%;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Flexbox container for header section */
+.header-container {
+  display: flex;
+  align-items: flex-start; /* Align the images to the top */
+  width: 100%; /* Ensure the section uses the full width */
+  justify-content: flex-start; /* Align images to the left */
+}
+
+/* Styling for the logo */
+.logo {
+  height: auto;
+  width: 100%; /* Adjust the size of the logo */
+  padding-top: 20px; /* Space from the top of the page */
+}
+
+/* Styling for the beans image */
+.header_img img {
+  height: auto;
+  width: 100%; /* Adjust the size of the beans image */
+  padding-top: 0;
+  margin-top: 0;
+}
+
 /* Navbar container */
 .navbar {
+  display: flex;
   overflow: hidden;
-  background-color: #333;
+  background-color: #3c2323;
   font-family: Arial;
+  height: 100px;
+  align-items: center;
+  padding-left: 2.5%;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 1.5em;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-align: center;
 }
 
 /* The dropdown container */
@@ -41,7 +101,7 @@ footer table {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 1.5em;
   border: none;
   outline: none;
   color: white;
@@ -65,6 +125,7 @@ footer table {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  line-height: 1.5;
 }
 
 /* Links inside the dropdown */
