@@ -50,8 +50,8 @@
 
 
         </header>
-        <main>
-            <div class="about">
+        <section class="about">
+            <div class="aboutPete">
                 <h2>About Us</h2>
                 <h3>Pete's Shop is a Community Benefit Society</h3>
                 <p>The shop is run by members of the community, for the
@@ -61,7 +61,52 @@
                     cooperative model regulated by the Financial Conduct
                     Authority.</p>
             </div>
-        </main>
+            <hr class="icon-hr">
+            <div class="icons">
+                <img src="images/home-brewing.png" alt="home-brewing">
+                <img src="images/organic.png" alt="Organic">
+                <img src="images/food.png" alt="WholeFoods">
+            </div>
+        </section>
+        <section class="inStock">
+            <h2>In Stock</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/img_4313.webp" alt="honey"
+                        style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/pexels-photo-669211.webp">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/images/img_4328.webp" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </section>
         <footer>
             <table>
                 <caption>Opening times</caption>
@@ -106,4 +151,5 @@
 
         </footer>
     </body>
+    <script src="/js/script.js"></script>
 </html>

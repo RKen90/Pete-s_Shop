@@ -5,6 +5,7 @@ body {
   background-color: #fffdf6;
   color: #3c2323;
   margin: 0;
+  height: 100%;
 }
 
 footer {
@@ -65,7 +66,7 @@ p {
 .header_img img {
   height: auto;
   width: 100%; /* Adjust the size of the beans image */
-  padding-top: 0;
+  padding-top: 20px;
   margin-top: 0;
 }
 
@@ -82,6 +83,8 @@ p {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adjust the shadow values as needed */
+  z-index: 1000; /* Ensures the navbar stays above other content */
 }
 
 /* Links inside the navbar */
@@ -148,4 +151,178 @@ p {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.about {
+  height: 75vh;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.aboutPete {
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+
+.aboutPete h2 {
+  font-family: "Lilita One", serif;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aboutPete h3 {
+  font-family: "Montserrat", serif;
+  font-size: 1.5em;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.aboutPete p {
+  font-family: "Montserrat", serif;
+  font-size: 1em;
+  width: 75%;
+  margin: auto;
+  font-style: italic;
+  line-height: 2;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding: 1em;
+}
+
+.icons,
+img {
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+img {
+  padding-left: 4em;
+}
+
+.icon-hr {
+  width: 25%;
+}
+
+.inStock {
+  height: 75vh;
+  background-color: #f5ecd5;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.inStock h2 {
+  text-align: center;
+  padding-top: 1em;
+  font-family: "Lilita One", serif;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Carousel */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
