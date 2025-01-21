@@ -79,10 +79,10 @@ p {
   height: 100px;
   align-items: center;
   padding-left: 2.5%;
-  font-family: "Montserrat", serif;
+  font-family: "Cabin", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
+  font-variation-settings: "wdth" 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adjust the shadow values as needed */
   z-index: 1000; /* Ensures the navbar stays above other content */
 }
