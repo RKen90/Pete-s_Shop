@@ -317,26 +317,24 @@ img {
 }
 
 .carousel .card .img {
-  background: #8b53ff;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%; /* Ensures circular image container */
+  height: 150px; /* Keeps the image size */
+  width: 150px;
+  background: #8b53ff; /* Purple background */
+  border: 4px solid #8b53ff; /* Adds the purple border */
+  border-radius: 50%; /* Ensures the circular shape */
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Prevents overflow */
 }
 
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%; /* Ensures circular image */
-  object-fit: cover; /* Ensures the image fits properly inside the circle */
-  border: 4px solid #fff; /* White border to make it look neat */
-}
-
-.carousel .card span {
-  color: #6a6d78;
-  font-size: 1.31rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images scale proportionally */
+  border-radius: 50%; /* Ensures circular shape */
+  padding: 4px; /* Adds some spacing inside the circle */
+  background-color: #fff; /* Optional: ensures a clean background */
 }
 
 .carouselTxt {
