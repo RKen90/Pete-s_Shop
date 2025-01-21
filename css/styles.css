@@ -8,14 +8,40 @@ body {
   height: 100%;
 }
 
+/* Footer Design */
+
 footer {
+  padding: 2em;
   text-align: center;
   background-color: #3c2323;
   color: #fffdf6;
 }
 
 footer table {
+  padding: 2em;
   margin: 0 auto; /* Centers the table horizontally */
+  line-height: 2;
+  border-collapse: separate;
+  text-align: left;
+  font-family: "Montserrat", serif;
+  font-size: 1em;
+}
+
+footer table th {
+  font-size: 1.5em;
+}
+
+footer table th,
+footer table td {
+  padding: 0.5em 0.5em; /* Adds padding inside cells: 10px top/bottom, 20px left/right */
+}
+
+.openingTimes {
+  text-align: center;
+  font-family: "Lilita One", serif;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .about h2,
